@@ -1,7 +1,7 @@
 const request = require('supertest')
 const app = require('../../src/app')
 const connection = require('../../src/database/connection')
-describe('ONg', () => {
+describe('ONG', () => {
     beforeEach(async () => {
         await connection.migrate.rollback()
         await connection.migrate.latest()
